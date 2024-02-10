@@ -1,1 +1,1 @@
-# exrcorewin
+# Exrcore Visual Studio build exercise
