@@ -13,7 +13,7 @@
 #  error "lib_common.h must always be included before libdeflate.h"
 #endif
 
-#define LIBDEFLATE_EXPORT_SYM static
+#define LIBDEFLATE_EXPORT_SYM
 
 /*
  * On i386, gcc assumes that the stack is 16-byte aligned at function entry.
@@ -33,11 +33,11 @@
 
 #include "../common_defs.h"
 
-static void *libdeflate_malloc(size_t size);
-static void libdeflate_free(void *ptr);
+void *libdeflate_malloc(size_t size);
+void libdeflate_free(void *ptr);
 
-static void *libdeflate_aligned_malloc(size_t alignment, size_t size);
-static void libdeflate_aligned_free(void *ptr);
+void *libdeflate_aligned_malloc(size_t alignment, size_t size);
+void libdeflate_aligned_free(void *ptr);
 
 #ifdef FREESTANDING
 /*

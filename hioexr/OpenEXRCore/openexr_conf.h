@@ -11,9 +11,9 @@
 //#include <IlmThreadConfig.h>
 //#include <ImathConfig.h>
 // pxr add these
-#define OPENEXR_EXPORT static
-#define EXR_EXPORT static
-#define EXR_INTERNAL static
+#define OPENEXR_EXPORT __declspec(dllexport)
+#define EXR_EXPORT __declspec(dllexport)
+#define EXR_INTERNAL
 #ifdef IMATH_HALF_SAFE_FOR_C
 #    undef IMATH_HALF_SAFE_FOR_C
 #endif

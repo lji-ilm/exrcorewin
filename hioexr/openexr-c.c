@@ -22,7 +22,7 @@
 // language governing permissions and limitations under the Apache License.
 //
 
-#include "pxr/base/arch/pragmas.h"
+#include "pragmas.h"
 
 // Not all functions in the OpenEXR library are used by Hio, and the OpenEXR
 // symbols themselves are declared static for inclusion within Hio.
@@ -229,7 +229,7 @@ void nanoexr_set_defaults(const char* filename, nanoexr_Reader_t* reader) {
                              &reader->exrSDKVersionPatch,
                              &reader->exrSDKExtraInfo);
 
-    reader->filename = strdup(filename);
+    reader->filename = _strdup(filename);
     reader->width = 0;
     reader->height = 0;
     reader->channelCount = 0;

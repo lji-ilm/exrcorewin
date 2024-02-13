@@ -1139,7 +1139,8 @@ libdeflate_deflate_decompress(struct libdeflate_decompressor *d,
 						NULL, actual_out_nbytes_ret);
 }
 
-LIBDEFLATEAPI struct libdeflate_decompressor *
+//LIBDEFLATEAPI 
+struct libdeflate_decompressor *
 libdeflate_alloc_decompressor(void)
 {
 	/*

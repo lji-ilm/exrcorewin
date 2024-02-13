@@ -119,6 +119,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="defines.h" />
+    <ClInclude Include="deflate\common_defs.h" />
+    <ClInclude Include="deflate\libdeflate.h" />
+    <ClInclude Include="deflate\lib\adler32_vec_template.h" />
+    <ClInclude Include="deflate\lib\bt_matchfinder.h" />
+    <ClInclude Include="deflate\lib\cpu_features_common.h" />
+    <ClInclude Include="deflate\lib\decompress_template.h" />
+    <ClInclude Include="deflate\lib\deflate_compress.h" />
+    <ClInclude Include="deflate\lib\deflate_constants.h" />
+    <ClInclude Include="deflate\lib\hc_matchfinder.h" />
+    <ClInclude Include="deflate\lib\ht_matchfinder.h" />
+    <ClInclude Include="deflate\lib\lib_common.h" />
+    <ClInclude Include="deflate\lib\matchfinder_common.h" />
+    <ClInclude Include="deflate\lib\x86\adler32_impl.h" />
+    <ClInclude Include="deflate\lib\x86\cpu_features.h" />
+    <ClInclude Include="deflate\lib\x86\decompress_impl.h" />
+    <ClInclude Include="deflate\lib\x86\matchfinder_impl.h" />
+    <ClInclude Include="deflate\lib\zlib_constants.h" />
     <ClInclude Include="openexr-c.h" />
     <ClInclude Include="OpenEXRCoreUnity.h" />
     <ClInclude Include="OpenEXRCore\backward_compatibility.h" />
@@ -165,8 +183,16 @@
     <ClInclude Include="OpenEXRCore\openexr_part.h" />
     <ClInclude Include="OpenEXRCore\openexr_std_attr.h" />
     <ClInclude Include="OpenEXRCore\openexr_version.h" />
+    <ClInclude Include="pragmas.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="deflate\lib\adler32.c" />
+    <ClCompile Include="deflate\lib\deflate_compress.c" />
+    <ClCompile Include="deflate\lib\deflate_decompress.c" />
+    <ClCompile Include="deflate\lib\utils.c" />
+    <ClCompile Include="deflate\lib\x86\cpu_features.c" />
+    <ClCompile Include="deflate\lib\zlib_compress.c" />
+    <ClCompile Include="deflate\lib\zlib_decompress.c" />
     <ClCompile Include="openexr-c.c" />
     <ClCompile Include="OpenEXRCore\attributes.c" />
     <ClCompile Include="OpenEXRCore\base.c" />
@@ -203,6 +229,7 @@
     <ClCompile Include="OpenEXRCore\write_header.c" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cpp.hint" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
