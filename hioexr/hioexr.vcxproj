@@ -137,7 +137,6 @@
     <ClInclude Include="deflate\lib\x86\decompress_impl.h" />
     <ClInclude Include="deflate\lib\x86\matchfinder_impl.h" />
     <ClInclude Include="deflate\lib\zlib_constants.h" />
-    <ClInclude Include="openexr-c.h" />
     <ClInclude Include="OpenEXRCoreUnity.h" />
     <ClInclude Include="OpenEXRCore\backward_compatibility.h" />
     <ClInclude Include="OpenEXRCore\dwaLookups.h" />
@@ -193,7 +192,6 @@
     <ClCompile Include="deflate\lib\x86\cpu_features.c" />
     <ClCompile Include="deflate\lib\zlib_compress.c" />
     <ClCompile Include="deflate\lib\zlib_decompress.c" />
-    <ClCompile Include="openexr-c.c" />
     <ClCompile Include="OpenEXRCore\attributes.c" />
     <ClCompile Include="OpenEXRCore\base.c" />
     <ClCompile Include="OpenEXRCore\channel_list.c" />
