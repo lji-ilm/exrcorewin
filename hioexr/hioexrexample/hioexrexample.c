@@ -32,7 +32,7 @@ int main()
 {
     printf("Hello, World! This is a native C program compiled on the command line (By Microsoft).\n");
 
-    char* FN = "Desk.exr";
+    char* FN = "GoldenGate.exr";
     nanoexr_Reader_t _exrReader = {};
     nanoexr_set_defaults(FN, &_exrReader);
 
@@ -45,6 +45,5 @@ int main()
 
     printf("Width = %d, Height = %d, Wrapmode = %d", _exrReader.width, _exrReader.height, _exrReader.wrapMode);
 
-    scanf_s("%d", &rv);
     return 0;
 }
